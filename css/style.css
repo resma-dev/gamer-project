@@ -16,7 +16,7 @@ a {
 }
 
 .container {
-    width: 1120px;
+    width: 1320px;
     margin: 0 auto;
 }
 
@@ -167,6 +167,35 @@ a {
     width: 90%;
     height: 85%;
 }
+.card{
+   position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 85%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 14px;
+    opacity: 0;
+    border: 5px solid #FF42A5;
+}
+.overlay p{
+    color: #FF42A5;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card:hover .overlay{
+    opacity: 1;
+}
 
 /* ONLINE GAMES CSS END  */
 /* PLAY INSTANTLY CSS START  */
@@ -213,7 +242,9 @@ a {
 /* PLAY INSTANTLY CSS END  */
 /* TYPES OF GAMES CSS START  */
 .games-type {
+    margin: 100px 0;
     padding: 130px 0;
+    background: rgba(255, 66, 165, 0.03);
 }
 
 .games-items-1 {
@@ -227,16 +258,89 @@ a {
     justify-content: space-evenly;
 }
 
-.games-list .games {
+.games {
     display: flex;
     gap: 10px;
     align-items: center;
-    background: #FF42A5;
-    padding: 5px 15px;
-    border: 1px solid green;
-    border-radius: 60px;
+    border-radius: 50px;
+    background: #FFF;
+    padding: 20px 10px;
+    transition: all linear 0.5s;
 }
-
+.games h5{
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+}
+.games h5:hover{
+    color: #FF42A5;
+}
+.games:hover{
+    border: 1px solid #FF42A5;
+}
 /* TYPES OF GAMES CSS END  */
 /* FOOTER CSS START  */
+.footer{
+    padding: 120px 0;
+    background: #0B0223;
+    text-align: center;
+}
+.footer-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 247px;
+    margin: 0 auto;
+}
+.footer-title-text h4{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+}
+.footer-title-text span{
+    color: #FF42A5;
+}
+.footer-text{
+    width: 794px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-text p{
+    padding-top: 56px;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-icon img{
+    padding-top: 66px;
+    margin-right: 50px;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 688px;
+    margin: 0 auto;
+}
+.footer-bottom p{
+    padding-top: 74px;
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+}
+.copyright p{
+    padding-top: 28px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+}
 /* FOOTER CSS END  */
+
+
